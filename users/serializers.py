@@ -12,6 +12,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
         source="user.username",
         read_only=True
     )
+    
     class Meta:
         model = UserProfile
         fields = [
